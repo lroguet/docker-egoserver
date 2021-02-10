@@ -22,6 +22,10 @@ During deployment:
 - You will be prompted for region: select the region of your choice, for example `europe-north1` (Finland)
 - You will be prompted to allow unauthenticated invocations: respond `y`
 
+If you don't want to be prompted you can instead add the above arguments directly to the deploy command and use `gcloud run deploy egoserver --image gcr.io/PROJECT-ID/egoserver --platform managed --allow-unauthenticated --region europe-north1`.
+
+![Google Cloud Run](https://raw.githubusercontent.com/lroguet/docker-egoserver/master/docs/egoserver-google-cloud-run.png)
+
 ### See it in action
 
 On deployment (see above) success, the command line displays the service URL. Visit your deployed container by opening the service URL in a web browser or by using the `curl` command.

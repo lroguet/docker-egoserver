@@ -17,6 +17,11 @@ A simple HTTP echo server written in Go and inspired by the Google Cloud Run [Bu
 
 `gcloud run deploy --image gcr.io/PROJECT-ID/egoserver --platform managed` where **_PROJECT-ID_** is your GCP project ID.
 
+During deployment:
+- You will be prompted for the service name: press Enter to accept the default name, `egoserver`
+- You will be prompted for region: select the region of your choice, for example `europe-north1` (Finland)
+- You will be prompted to allow unauthenticated invocations: respond `y`
+
 ### See it in action
 
 On deployment (see above) success, the command line displays the service URL. Visit your deployed container by opening the service URL in a web browser or by using the `curl` command.
